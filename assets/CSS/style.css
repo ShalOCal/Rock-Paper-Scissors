@@ -36,3 +36,30 @@ button {
     background-color: #F0E148;
     float: right;
 }
+
+h2 {
+    font-family: gugi, cursive;
+    color: purple;
+}
+
+p {
+    font-family: gugi, cursive;
+    color: purple;
+}
+
+.playerScore {
+    margin-left: 5%;
+}
+
+.computerScore {
+    margin-left: 55%;
+
+}
+
+.reset {
+    font-family: gugi, cursive;
+    color: purple;
+    background-color: #272829;
+    font-size: larger;
+    margin-left: 30%;
+}
