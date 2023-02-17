@@ -6,7 +6,7 @@ body {
     image-orientation: center;
 }
 
-.game-header{
+.header{
     color: purple;
     font-family: gugi, cursive;
     font-size: 100px;
@@ -18,17 +18,21 @@ button {
     size: 20em;
     margin: 10px;
     padding: 10px;
+    border-radius: 50%;
 
 }
 
 .rock {
     background-color: #F00077;
+    float: left;
 }
 
 .paper {
     background-color: #1B70F0;
+    margin-left: 20%;
 }
 
 .scissors {
     background-color: #F0E148;
+    float: right;
 }
