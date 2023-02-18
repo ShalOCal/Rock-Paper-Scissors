@@ -1,14 +1,41 @@
- 
+document.addEventListener("DOMContentLoaded", function() {
+    let buttons = document.getElementsByTagName("button");
 
-function playGame() {
-
-
-
-    function whichClick() {
-
+    for (let button of buttons) {
+        button.addEventListener("click", function() {
+            if (this.getAttribute("data-type") === "submit") {
+                playGame();
+            } else {
+                let gameType = this.getAttribute("data-type");
+                runGame(gameType);
+            }
+        });
     }
 
-    function computerMove() {
+function playGame() {
+    let playerScore = 0;
+    let computerScore = 0;
+    
+
+    function whichClick(p1) {
+        document.getElementById("rock").textContent = choice1
+        document.getElementById("paper").textContent = choice2
+        document.getElementById("scissors").textContent = choice3
+    }
+
+    function computerMove(p2) {
+        let p2 = Math.floor(Math.random() * 3) + 1;   
+
+        if (p2 = "1") {
+             p2 = "rock"};
+        else if (p2 = "2") {
+             p2 = "paper" };
+        else if (p3 ="3") {
+            p2 = "scissors"
+        };
+        
+    }
+
         
     }
 
