@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded"), function() {
             if (this.getAttribute("data-type") === "submit") {
                 playGame();
             } else {
-                let gameType = this.getAttribute("data-type");
-                runGame(gameType);
+                "Please make a selection"
             }
         });
     }
+}
 
 function playGame() {
     let playerScore = 0;
@@ -80,7 +80,7 @@ function playGame() {
     }
 
         
-    }
+
 
     function decideWinner(p1, p2) {
         let result = null;
@@ -103,6 +103,12 @@ function playGame() {
             break;
         }
         return result;
+
+        if (result = "p1") {
+            playerScore = ++playerScore
+        } else {
+            computerScore = ++computerScore
+        }
       };
 
 }
