@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded"), function() {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
@@ -21,17 +21,60 @@ function playGame() {
         document.getElementById("rock").textContent = choice1
         document.getElementById("paper").textContent = choice2
         document.getElementById("scissors").textContent = choice3
+
     }
+
+    if (p1 = "choice1") {
+        p1 = "rock"
+        function pRock() {
+            let pimage = new image (100, 200)
+            pimage.src = "assets/images/rock-pic.jpg"
+        }
+        pRock
+        }
+    else if (p1 = "choice2") {
+         p1 = "paper"
+         function pPaper() {
+            let pimage = new image (100, 200)
+            pimage.src = "assets/images/paper-pic.jpg"
+        }
+        pPaper
+        }
+    else if (p1 ="choice3") {
+         p1 = "scissors"
+         function pScissors() {
+            let pimage = new image (100, 200)
+            pimage.src = "assets/images/scissors-pic.jpg"
+        }
+        pScissors
+    };
 
     function computerMove(p2) {
         let p2 = Math.floor(Math.random() * 3) + 1;   
 
         if (p2 = "1") {
-             p2 = "rock"};
+            p2 = "rock"
+            function cRock() {
+                let cimage = new image (100, 200)
+                cimage.src = "assets/images/rock-pic.jpg"
+            }
+            cRock
+            }
         else if (p2 = "2") {
-             p2 = "paper" };
-        else if (p3 ="3") {
+             p2 = "paper"
+             function cPaper() {
+                let cimage = new image (100, 200)
+                cimage.src = "assets/images/paper-pic.jpg"
+            }
+            cPaper
+            }
+        else if (p2 ="3") {
             p2 = "scissors"
+            function cScissors() {
+                let cimage = new image (100, 200)
+                cimage.src = "assets/images/scissors-pic.jpg"
+            }
+            cScissors
         };
         
     }
