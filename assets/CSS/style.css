@@ -29,7 +29,7 @@ button {
 
 .paper {
     background-color: #1B70F0;
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 .scissors {
@@ -48,11 +48,13 @@ p {
 }
 
 .playerScore {
-    margin-left: 5%;
+    padding-left: 5%;
+    float: left;
 }
 
 .computerScore {
-    margin-left: 55%;
+    float: right;
+    padding-right: 5%;
 
 }
 
@@ -61,5 +63,5 @@ p {
     color: purple;
     background-color: #272829;
     font-size: larger;
-    margin-left: 30%;
+    margin-left: 22%;
 }
