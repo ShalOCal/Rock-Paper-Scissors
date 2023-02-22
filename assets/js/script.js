@@ -68,9 +68,8 @@ else if (p2 ="3") {
     }
     cScissors
 };
+ 
 
-
-    // compare guesses
 };
 
 
@@ -118,9 +117,9 @@ init();
 // //    playGame();
 // //};
 
-// function playGame() {
-//     let playerScore = 0;
-//     let computerScore = 0;
+ function playGame() {
+     let playerScore = 0;
+     let computerScore = 0;
     
 
 //     function whichClick(p1) {
@@ -151,24 +150,27 @@ init();
 //     if (p1 = "choice1") {
 //         p1 = "rock"
          function pRock() {
-             let pimage = new image (100, 200)
-             pimage.src = "assets/images/rock-pic.jpg"
+             let pimage = new image (100, 200);
+             pimage.src = "assets/images/rock-pic.jpg";
+             let p1 = "rock";
          }
          
 //         }
 //     else if (p1 = "choice2") {
 //          p1 = "paper"
           function pPaper() {
-             let pimage = new image (100, 200)
-             pimage.src = "assets/images/paper-pic.jpg"
-//         }
+             let pimage = new image (100, 200);
+             pimage.src = "assets/images/paper-pic.jpg";
+             let p1 = "paper";
+         }
 //         pPaper
 //         }
 //     else if (p1 ="choice3") {
 //          p1 = "scissors"
           function pScissors() {
-             let pimage = new image (100, 200)
-             pimage.src = "assets/images/scissors-pic.jpg"
+             let pimage = new image (100, 200);
+             pimage.src = "assets/images/scissors-pic.jpg";
+             let p1 = "scissors";
          }
 //         pScissors
 //     };
@@ -206,42 +208,51 @@ init();
         
 
 
-//     function decideWinner(p1, p2) {
-//         let result = null;
+     function decideWinner(p1, p2) {
+         let result = null;
       
-//         switch (p1.choice + p2.choice) {
-//           case "rockscissors":
-//           case "scissorspaper":
-//           case "paperrock":
-//             result = p1;
-//             break;
-//           case "scissorsrock":
-//           case "paperscissors":
-//           case "rockpaper":
-//             result = p2;
-//             break;
-//           case "paperpaper":
+         switch (p1.choice + p2.choice) {
+           case "rockscissors":
+           case "scissorspaper":
+           case "paperrock":
+             result = p1;
+             break;
+           case "scissorsrock":
+           case "paperscissors":
+           case "rockpaper":
+             result = p2;
+             break;
+           case "paperpaper":
 
-//           case "scissorsscissors":
-//           case "rockrock":
-//             result = null;
-//             break;
-//         }
-//         return result;
+           case "scissorsscissors":
+           case "rockrock":
+             result = null;
+             break;
+         }
+         return result;
 
-//         if (result = "p1") {
-//             playerScore = ++playerScore
-//         } else {
-//             computerScore = ++computerScore
-//         }
-//       };
+         if (result = "p1") {
+             playerScore = ++playerScore
+         } else {
+             computerScore = ++computerScore
+         }
+       };
 
 // }
 
 // playGame();
 
-// function clearBoard() {
+button.addEventListener('click', event => {
+    const clicked = event.currentTarget;
+    onButtonClicked(clicked); {
+        clearBoard();
+    }
+});
 
 
+function clearBoard() {
+    playerScore = 0;
+    computerScore = 0;
 
+};
 }
